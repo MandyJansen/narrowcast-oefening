@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Analogue clock
+   ========================================================================== */
+
+.c-analogueClock {
+	$height: 45vh;
+	$width: $height;
+	
+	position: absolute;	
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	width: $width;
+	height: calc(100% - 2rem);
+
+	.is-loaded & {
+		@include easeInOutBack;
+	}
+
+	.js-clockSwitch & {
+		left: 150%;
+	}
+  
+	// pin in the middle
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: 10;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 3%;
+		height: 3%;
+		border-radius: 50%;
+		background: $blue;
+	}
+
+	// Containers for the clock hands
+	&-hourContainer,
+	&-minuteContainer,
+	&-secondContainer{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&-hourHand,
+	&-minuteHand,
+	&-secondHand {
+		position: absolute;
+		left: 49.5%;	
+		width: 1%;
+	}
+
+	&-hourHand,
+	&-minuteHand {
+		transform-origin: 50% 100%;
+	}
+
+	&-hourHand {
+		top: 20%;
+		height: 30%;
+	}
+
+	&-minuteHand {
+		top: 5%;
+		height: 45%;
+	}
+
+	&-secondHand {	
+		top: 7%;
+		transform-origin: 50% 80%;
+		z-index: 8;
+		height: 54%;
+		background: $blue;
+	}
+
+	// Add animation to clock hands
+	&-hourContainer {
+		animation: rotate 43200s infinite linear;
+	}
+	
+	&-minuteContainer {
+		@include minuteSecondHand;
+	}
+	
+	&-secondContainer {
+		@include minuteSecondHand;
+	}
+}

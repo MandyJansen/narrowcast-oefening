@@ -1,0 +1,28 @@
+@import "~normalize.css/normalize.css";
+
+@import "~aos/dist/aos.css";
+
+@import "utilities/media-queries";
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@import "base/resets";
+@import "base/typography";
+
+@import "layout/grid";
+@import "layout/layout";
+
+@import "basscss-margin";
+@import "basscss-padding";
+
+@import "settings/theme";
+
+@import "sections/clock-wrapper";
+@import "sections/location-details";
+
+@import "components/analogue-clock";
+@import "components/digital-clock";
+@import "components/opening-hours";
+
+@import "objects/theme-switch";
+

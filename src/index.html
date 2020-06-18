@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Narrowcast oefening</title>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="js-clockSwitch">
+	
+	<div class="themeSwitch js-themeSwitch"></div>
+	
+	<section class="clockWrapper">
+		<div class="c-analogueClock">
+			<div class="c-analogueClock-hourContainer">
+				<div class="c-analogueClock-hourHand js-hour"></div>
+			</div>
+			<div class="c-analogueClock-minuteContainer js-minuteContainer">
+				<div class="c-analogueClock-minuteHand js-minute"></div>
+			</div>
+			<div class="c-analogueClock-secondContainer js-secondContainer">
+				<div class="c-analogueClock-secondHand js-second"></div>
+			</div>
+		</div>
+		<div class="c-digitalClock t-center">
+			<p class="c-digitalClock__time js-currentTime"></p>
+		</div>
+	</section>
+
+	<section class="locationDetails">
+		<div class="flexWrap">
+			<h2 class="locationDetails__title t-center">Bedrijfsnaam & co</h2>
+			<p class="locationDetails__status open t-center">Open</p>
+			<!-- <p class="locationDetails__status closed t-center"><span>Gesloten</span> - opent om 09:00</p>
+			<p class="locationDetails__status closingSoon t-center"><span>Sluit bijna</span> - om 17:30</p>
+			<p class="locationDetails__status opensSoon t-center"><span>Opent bijna</span> - om 09:00</p> -->
+		
+			<div class="c-openingHours">
+				<ul class="c-openingHours__list">
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Donderdag</span><span class="c-openingHours__time">09:00 - 17:30</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Vrijdag</span><span class="c-openingHours__time">09:00 - 17:30</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Zaterdag</span><span class="c-openingHours__time">Gesloten</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Zondag</span><span class="c-openingHours__time">Gesloten</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Maandag</span><span class="c-openingHours__time">09:00 - 17:30</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Dinsdag</span><span class="c-openingHours__time">09:00 - 17:30</span></li>
+					<li class="c-openingHours__details"><span class="c-openingHours__day">Woensdag</span><span class="c-openingHours__time">09:00 - 17:30</span></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

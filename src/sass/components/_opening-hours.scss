@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Opening hours
+   ========================================================================== */
+
+.c-openingHours {
+    height: 100%;
+    &__list {
+        @include xsm {
+            margin-top: 2rem;
+        }
+        height: 100%;
+    }
+
+    &__day {
+        float: left;
+    }
+
+    &__time {
+        float: right;
+        display: block;
+        margin-left: 6rem;
+    }
+}

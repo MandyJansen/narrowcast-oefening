@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Opening hours
+   ========================================================================== */
+
+.locationDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    color: $darkgrey;
+
+    &__status {
+        margin-bottom: 0;
+
+        &.open {
+            color: $green;
+        }
+
+        &.closed,
+        &.closingSoon {
+            span {
+                color: $red;
+            }
+        }
+
+        &.opensSoon {
+            span {
+                color: $orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+/* ==========================================================================
+	Typography
+   ========================================================================== */
+
+html,
+body {
+    font-size: 14px;
+    @include xsm {
+        font-size: 16px;
+    }
+    @include md {
+        font-size: 18px;
+    }
+    @include iPad {
+        font-size: 24px;
+    }
+    @include portrait {
+        font-size: 24px;
+    }
+    @include portraitHD {
+       font-size: 42px;
+    }
+}
+
+body {
+    background: $white;
+    font-family: $noto-sans;
+    color: $darkgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $playfair;
+    line-height: 1.5;
+}
+
+// largest font-size
+.t1 {
+    font-size: 4rem;
+}
+
+// second largest-font-size
+.t2 {
+    font-size: 3rem;
+}
+
+// third largest font-size
+.t3 {
+    font-size: 2rem;
+}
+
+.t-center {
+    text-align: center;
+}
+
+p,
+li,
+a {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+p,
+ul {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+a {
+    &:hover,
+    &:focus {
+        background-size: 4px 50px;
+        text-decoration: none;
+        color: $white;
+    }
+}

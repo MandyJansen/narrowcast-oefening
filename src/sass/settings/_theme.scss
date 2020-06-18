@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Theme settings
+   ========================================================================== */
+
+.clockWrapper {
+    &::after {
+        background: rgba($black, .5);
+
+        .light-theme & {
+            background: rgba($grey, .5);
+        }
+    }
+}
+
+.c-analogueClock {
+    background: url(../img/clock-facing-dark.svg) no-repeat center;
+	
+	.light-theme & {
+		background: url(../img/clock-facing-light.svg) no-repeat center;
+    }
+    
+    &-hourHand,
+	&-minuteHand {
+		background: $white;
+
+		.light-theme & {
+			background: $darkgrey;
+		}
+	}
+}
+
+.c-digitalClock {
+    &__time {
+        color: $white;
+        text-shadow: 2px 4px 3px rgba($blue, .5);
+
+        .light-theme & {
+            color: $darkgrey;
+            text-shadow: 2px 4px 3px rgba($blue, .5);
+        }
+    }
+}
+
+.locationDetails {
+    background-color: $grey;
+
+    .light-theme & {
+        background-color: $white;
+    }
+
+    &__title {
+        color: $darkgrey;
+
+        .light-theme & {
+            color: $blue;
+        }
+    }
+}
